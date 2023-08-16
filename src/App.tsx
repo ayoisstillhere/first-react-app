@@ -7,11 +7,10 @@ const App = () => {
 
   return (
     <div>
-      {alertVisibile && <Alert>My Alert</Alert>}
-      <Button
-        color="primary"
-        onClick={() => setAlertVisibility(!alertVisibile)}
-      >
+      {alertVisibile && (
+        <Alert onClose={() => setAlertVisibility(false)}>My Alert</Alert>
+      )}
+      <Button color="primary" onClick={() => setAlertVisibility(true)}>
         Click Me now nigga
       </Button>
     </div>
