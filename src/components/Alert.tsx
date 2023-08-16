@@ -1,8 +1,11 @@
+interface AlertProps {
+    text: string;
+}
 
-const Alert = () => {
+const Alert = ({text}: AlertProps) => {
   return (
     <div className="alert alert-primary" role="alert">
-    It's a freaking Alert!!!
+    {text}
   </div>
   )
 }

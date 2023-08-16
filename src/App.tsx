@@ -3,7 +3,7 @@ import Alert from "./components/Alert";
 const App = () => {
   return (
     <div>
-     <Alert />
+     <Alert text="Hello Niggas"/>
     </div>
   );
 }
