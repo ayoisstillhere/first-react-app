@@ -4,16 +4,19 @@ import Button from "./components/Button";
 const App = () => {
   return (
     <div>
-      <Alert>Hello <a href="www.google.com">World</a></Alert>
-      <Button className="btn btn-primary">
+      <Alert>
+        Hello <a href="www.google.com">World</a>
+      </Alert>
+      <Button color="primary" onClick={() => console.log("Clicked")}>
         Click Me now nigga
       </Button>
-      <Button className="btn btn-danger">
+      <Button color="danger" onClick={() => console.log("Clicked")}>
         Click Me now nigga
       </Button>
-      <Button className="btn btn-info">
+      <Button color="info" onClick={() => console.log("Clicked")}>
         Click Me now nigga
       </Button>
+      <Button onClick={() => console.log("Clicked")}>Default</Button>
     </div>
   );
 };
