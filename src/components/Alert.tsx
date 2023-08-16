@@ -1,13 +1,13 @@
 interface AlertProps {
-    text: string;
+  children: string;
 }
 
-const Alert = ({text}: AlertProps) => {
+const Alert = ({ children }: AlertProps) => {
   return (
     <div className="alert alert-primary" role="alert">
-    {text}
-  </div>
-  )
-}
+      {children}
+    </div>
+  );
+};
 
 export default Alert;

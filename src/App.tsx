@@ -3,9 +3,9 @@ import Alert from "./components/Alert";
 const App = () => {
   return (
     <div>
-     <Alert text="Hello Niggas"/>
+      <Alert>Hello World</Alert>
     </div>
   );
-}
+};
 
 export default App;
