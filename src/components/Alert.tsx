@@ -1,7 +1,9 @@
 
 const Alert = () => {
   return (
-    <div>Alert</div>
+    <div className="alert alert-primary" role="alert">
+    It's a freaking Alert!!!
+  </div>
   )
 }
 
